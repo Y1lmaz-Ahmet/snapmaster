@@ -1,0 +1,67 @@
+.content-component {
+	height: 500px;
+	width: 100%;
+	background-color: rgb(204, 230, 244);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+
+
+	.content-component-title {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		width: 1000px;
+
+		h1 {
+			font-family: 'Orelega One', serif;
+			font-size: 48px;
+
+		}
+	}
+
+	.content-component-description-box {
+		text-align: left;
+		font-family: "Zilla Slab", "Zilla Slab Placeholder", serif;
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+
+		.description-paragraph {
+			font-size: 20px;
+			max-width: 600px;
+
+			p {
+				line-height: 2rem;
+			}
+		}
+
+		.description-data-box {
+			display: flex;
+			gap: 15px;
+			margin-top: 15px;
+
+			h4 {
+				font-family: 'Orelega One', serif;
+				margin-bottom: 9px;
+				font-size: 32px;
+			}
+
+			p {
+				font-family: 'Zilla Slab', serif;
+				font-size: 16px;
+			}
+
+			.box-one,
+			.box-two,
+			.box-three {
+				width: 200px;
+			}
+
+		}
+	}
+
+
+
+}

@@ -1,0 +1,20 @@
+.footer-component {
+	height: 100px;
+	width: 100%;
+	background-color: rgb(204, 230, 244);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	.copyright {
+		font-family: 'Zilla Slab', serif;
+	}
+
+	.media-for-idiots {
+		img {
+			width: 48px;
+			padding-left: 15px;
+			cursor: pointer;
+		}
+	}
+}
