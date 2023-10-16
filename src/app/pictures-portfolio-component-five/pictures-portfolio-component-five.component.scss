@@ -1,10 +1,22 @@
 .pictures-portfolio-component {
-	height: 400px;
+	height: 350px;
 	width: 100%;
 	background-color: rgba(204, 230, 244, 0.603);
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	gap: 10px;
+	overflow: hidden;
+
+
+	@media screen and (min-width:768px) and (max-width:1023px) {
+		grid-template-columns: repeat(3, 1fr);
+		height: auto;
+	}
+
+	@media screen and (max-width:768px) {
+		grid-template-columns: 1fr;
+		height: auto;
+	}
 
 	.container {
 		max-width: 1000px;
@@ -12,6 +24,8 @@
 		align-items: center;
 		display: flex;
 		position: relative;
+
+
 
 		img {
 			height: 200px;
@@ -21,6 +35,14 @@
 			padding: 15px;
 			border-radius: 19px;
 			transition: all .3s ease-in-out;
+
+			@media screen and (min-width:768px) and (max-width:1023px) {
+				height: 250px;
+			}
+
+			@media screen and (max-width:768px) {
+				height: 300px;
+			}
 
 			&:hover {
 				padding: 20px;

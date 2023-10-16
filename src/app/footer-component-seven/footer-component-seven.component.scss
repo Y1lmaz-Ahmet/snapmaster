@@ -6,8 +6,24 @@
 	justify-content: space-around;
 	align-items: center;
 
+	@media screen and (max-width:768px) {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 35px;
+		height: auto;
+	}
+
+	@media screen and (max-width:500px) {
+		height: 200px;
+		padding-top: 30px;
+	}
+
 	.copyright {
 		font-family: 'Zilla Slab', serif;
+
+		@media screen and (max-width:768px) {
+			font-size: 24px;
+		}
 	}
 
 	.media-for-idiots {
@@ -15,6 +31,10 @@
 			width: 48px;
 			padding-left: 15px;
 			cursor: pointer;
+
+			@media screen and (max-width:500px) {
+				width: 65px;
+			}
 		}
 	}
 }

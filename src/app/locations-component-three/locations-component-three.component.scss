@@ -13,6 +13,18 @@
 		max-width: 1000px;
 		gap: 5px;
 
+		@media screen and (min-width: 768px) and (max-width: 1023px) {
+			/* CSS-stijlen voor tablets */
+			max-width: 800px;
+		}
+
+		@media screen and (max-width: 767px) {
+			/* CSS-stijlen voor mobiele apparaten */
+			max-width: 760px;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr;
+		}
+
 		.card {
 			display: flex;
 			flex-direction: column;
@@ -25,6 +37,22 @@
 				padding: 2px;
 				filter: grayscale(100%);
 				object-fit: fill;
+
+				@media screen and (min-width: 768px) and (max-width: 1023px) {
+					/* CSS-stijlen voor tablets */
+					height: 480px - 150px;
+					width: 480px - 150px;
+				}
+
+				@media screen and (max-width: 767px) {
+					/* CSS-stijlen voor mobiele apparaten */
+					margin: auto;
+				}
+
+				@media screen and (max-width:450px) {
+					max-width: 300px;
+					max-height: 300px;
+				}
 			}
 
 
@@ -34,15 +62,39 @@
 				gap: 15px;
 				margin-bottom: 15px;
 
+				@media screen and (max-width: 767px) {
+					/* CSS-stijlen voor mobiele apparaten */
+					max-width: 500px;
+				}
+
 				h4 {
 					font-family: 'Orelega One', serif;
 					color: rgb(23, 86, 118);
 					font-size: 32px;
+
+					@media screen and (min-width: 768px) and (max-width: 1023px) {
+						/* CSS-stijlen voor tablets */
+						font-size: 32px;
+					}
+
+					@media screen and (max-width: 767px) {
+						/* CSS-stijlen voor mobiele apparaten */
+						font-size: 34px;
+					}
 				}
 
 				p {
 					font-family: 'Zilla Slab', serif;
 					font-size: 20px;
+
+					@media screen and (min-width: 768px) and (max-width: 1023px) {
+						/* CSS-stijlen voor tablets */
+						font-size: 24px;
+					}
+
+					@media screen and (max-width:768px) {
+						font-size: 27px;
+					}
 				}
 			}
 		}

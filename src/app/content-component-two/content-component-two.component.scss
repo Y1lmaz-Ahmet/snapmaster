@@ -7,12 +7,19 @@
 	align-items: center;
 	overflow: hidden;
 
+	@media screen and (max-width:500px) {
+		height: auto;
+	}
 
 	.content-component-title {
 		display: flex;
 		flex-direction: column;
 		gap: 15px;
 		width: 1000px;
+
+		@media screen and (max-width:500px) {
+			max-width: 300px;
+		}
 
 		h1 {
 			font-family: 'Orelega One', serif;
