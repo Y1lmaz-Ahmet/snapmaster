@@ -6,6 +6,7 @@
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
+	position: relative;
 
 	.hero-title {
 		text-transform: uppercase;
@@ -23,5 +24,15 @@
 		align-items: center;
 		letter-spacing: 5px;
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		position: relative;
+
+		.test {
+			position: absolute;
+			top: -25px;
+			right: -30px;
+			transform: matrix(0.866, 0.7, -0.8, 0.866, 0, 0);
+			font-size: 30px;
+		}
 	}
+
 }
